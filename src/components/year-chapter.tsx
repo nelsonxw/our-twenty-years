@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion'
+import { motion, useInView, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { Heart } from 'lucide-react'
 import { Lightbox } from './lightbox'
@@ -19,7 +19,8 @@ export function YearChapter({ data, index }: YearChapterProps) {
   const [userInteracted, setUserInteracted] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
-  const inViewRef = useRef(false)
+  const mediaRef = useRef<HTMLDivElement>(null)
+  const isInViewRef = useRef(false)
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -47,31 +48,25 @@ export function YearChapter({ data, index }: YearChapterProps) {
   const prev = () =>
     setPhotoIndex((i) => (i - 1 + lightboxImages.length) % lightboxImages.length)
 
-  useMotionValueEvent(scrollYProgress, 'change', (v) => {
+  const isInView = useInView(mediaRef, { once: false, amount: 'some', margin: '-1px' })
+
+  useEffect(() => {
     const video = videoRef.current
-    if (!video || document.hidden) return
-    const wasInView = inViewRef.current
-    const isInView = v >= 0 && v <= 1
-    inViewRef.current = isInView
-    if (isInView && !wasInView) {
+    if (!video) return
+    isInViewRef.current = isInView
+    if (!document.hidden && isInView) {
       video.play().catch(() => {})
-    } else if (!isInView && wasInView) {
+    } else {
       video.pause()
     }
-  })
+  }, [isInView])
 
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
 
-    const v = scrollYProgress.get()
-    if (!document.hidden && v >= 0 && v <= 1) {
-      inViewRef.current = true
-      video.play().catch(() => {})
-    }
-
     const handleVisibilityChange = () => {
-      if (!document.hidden && inViewRef.current) {
+      if (!document.hidden && isInViewRef.current) {
         video.play().catch(() => {})
       } else {
         video.pause()
@@ -99,6 +94,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
       )}
     >
       <motion.div
+        ref={mediaRef}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: '-100px' }}

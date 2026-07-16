@@ -24,7 +24,7 @@ export function Hero() {
         className="absolute inset-0 z-0 scale-110"
       >
         <Image
-          src="/images/IMG_8531_enhanced.png"
+          src="/images/front_page/IMG_8531_enhanced.png"
           alt=""
           fill
           priority
