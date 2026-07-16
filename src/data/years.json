@@ -8,11 +8,14 @@
       "Honeymoon road trip",
       "First set of keys"
     ],
-    "heroVideo": "https://drive.google.com/file/d/1GqVDKlGXPKvrpGynKsc7kpUFdBXyqGbR/preview",
+    "heroVideo": "/videos/marriedvideo.mp4",
     "galleryImages": [
-      "https://picsum.photos/seed/2006-g1/800/600",
-      "https://picsum.photos/seed/2006-g2/800/600",
-      "https://picsum.photos/seed/2006-g3/800/600"
+      "/images/2006/DSC02902.JPG",
+      "/images/2006/IMG_8835.JPG",
+      "/images/2006/IMG_9097.JPG",
+      "/images/2006/wedding_ 048.jpg",
+      "/images/2006/wedding_ 050.jpg",
+      "/images/2006/wedding_ 057.jpg"
     ]
   },
   {
