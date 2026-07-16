@@ -16,8 +16,10 @@ interface YearChapterProps {
 export function YearChapter({ data, index }: YearChapterProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
+  const [userInteracted, setUserInteracted] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
+  const mediaRef = useRef<HTMLDivElement>(null)
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -47,7 +49,8 @@ export function YearChapter({ data, index }: YearChapterProps) {
 
   useEffect(() => {
     const video = videoRef.current
-    if (!video) return
+    const media = mediaRef.current
+    if (!video || !media) return
 
     let isIntersecting = false
 
@@ -69,12 +72,16 @@ export function YearChapter({ data, index }: YearChapterProps) {
       { threshold: 0 }
     )
 
-    observer.observe(video)
+    observer.observe(media)
     document.addEventListener('visibilitychange', handleVisibilityChange)
+
+    const unmuteOnce = () => setUserInteracted(true)
+    document.addEventListener('pointerdown', unmuteOnce, { once: true })
 
     return () => {
       observer.disconnect()
       document.removeEventListener('visibilitychange', handleVisibilityChange)
+      document.removeEventListener('pointerdown', unmuteOnce)
     }
   }, [])
 
@@ -88,6 +95,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
       )}
     >
       <motion.div
+        ref={mediaRef}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: '-100px' }}
@@ -112,6 +120,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
                 ref={videoRef}
                 src={data.heroVideo}
                 autoPlay
+                muted={!userInteracted}
                 loop
                 playsInline
                 controls
