@@ -26,9 +26,11 @@ export function YearChapter({ data, index }: YearChapterProps) {
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '20%'])
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1.15, 1, 1.15])
 
-  const allImages = data.heroImage
+  const lightboxImages = data.heroImage
     ? [data.heroImage, ...data.galleryImages]
     : data.galleryImages
+
+  const displayGallery = data.galleryImages.slice(0, 3)
 
   const isGoogleDrive =
     data.heroVideo?.startsWith('https://drive.google.com') ?? false
@@ -39,24 +41,39 @@ export function YearChapter({ data, index }: YearChapterProps) {
   }
 
   const next = () =>
-    setPhotoIndex((i) => (i + 1) % allImages.length)
+    setPhotoIndex((i) => (i + 1) % lightboxImages.length)
   const prev = () =>
-    setPhotoIndex((i) => (i - 1 + allImages.length) % allImages.length)
+    setPhotoIndex((i) => (i - 1 + lightboxImages.length) % lightboxImages.length)
 
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
 
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        video.pause()
-      } else {
+    let isIntersecting = false
+
+    const updatePlayState = () => {
+      if (!document.hidden && isIntersecting) {
         video.play().catch(() => {})
+      } else {
+        video.pause()
       }
     }
 
+    const handleVisibilityChange = () => updatePlayState()
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isIntersecting = entry.isIntersecting
+        updatePlayState()
+      },
+      { threshold: 0 }
+    )
+
+    observer.observe(video)
     document.addEventListener('visibilitychange', handleVisibilityChange)
+
     return () => {
+      observer.disconnect()
       document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
   }, [])
@@ -152,9 +169,9 @@ export function YearChapter({ data, index }: YearChapterProps) {
             </ul>
           )}
 
-          {data.galleryImages.length > 0 && (
+          {displayGallery.length > 0 && (
             <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
-              {data.galleryImages.map((image, i) => (
+              {displayGallery.map((image, i) => (
                 <button
                   key={image}
                   onClick={() => openAt(i + (data.heroImage ? 1 : 0))}
@@ -177,7 +194,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
       </div>
 
       <Lightbox
-        images={allImages}
+        images={lightboxImages}
         initialIndex={photoIndex}
         isOpen={lightboxOpen}
         onClose={() => setLightboxOpen(false)}
