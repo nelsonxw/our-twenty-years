@@ -159,7 +159,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
           <h2 className="mt-4 font-serif text-3xl text-navy dark:text-ivory lg:text-5xl">
             {data.title}
           </h2>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-warm-gray">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-warm-gray dark:text-[#A8A6C8]">
             {data.summary}
           </p>
 
