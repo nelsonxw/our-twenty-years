@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { Heart } from 'lucide-react'
@@ -17,6 +17,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
   const sectionRef = useRef<HTMLElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -41,6 +42,24 @@ export function YearChapter({ data, index }: YearChapterProps) {
     setPhotoIndex((i) => (i + 1) % allImages.length)
   const prev = () =>
     setPhotoIndex((i) => (i - 1 + allImages.length) % allImages.length)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        video.pause()
+      } else {
+        video.play().catch(() => {})
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
+    }
+  }, [])
 
   return (
     <section
@@ -73,6 +92,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
               />
             ) : (
               <video
+                ref={videoRef}
                 src={data.heroVideo}
                 autoPlay
                 loop
