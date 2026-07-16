@@ -1,0 +1,42 @@
+{
+  "name": "our-twenty-years",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chinese-fonts/pfljhfyt": "^3.0.0",
+    "@chinese-fonts/rmjzqpybxs": "^3.0.0",
+    "@chinese-fonts/tjl": "^3.0.0",
+    "@chinese-fonts/zqzmxs": "^3.0.0",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/liu-jian-mao-cao": "^5.2.8",
+    "@fontsource/noto-serif-sc": "^5.2.9",
+    "@fontsource/playfair-display": "^5.2.8",
+    "@radix-ui/react-dialog": "^1.1.4",
+    "@radix-ui/react-slot": "^1.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.469.0",
+    "next": "^15.1.0",
+    "next-themes": "^0.4.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-navy antialiased transition-colors duration-300 dark:bg-navy dark:text-ivory;
+  }
+
+  ::selection {
+    @apply bg-champagne/30 text-navy dark:text-ivory;
+  }
+}
