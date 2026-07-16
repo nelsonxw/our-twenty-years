@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { Heart } from 'lucide-react'
 import { Lightbox } from './lightbox'
@@ -19,7 +19,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
   const [userInteracted, setUserInteracted] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
-  const mediaRef = useRef<HTMLDivElement>(null)
+  const inViewRef = useRef(false)
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -47,39 +47,43 @@ export function YearChapter({ data, index }: YearChapterProps) {
   const prev = () =>
     setPhotoIndex((i) => (i - 1 + lightboxImages.length) % lightboxImages.length)
 
+  useMotionValueEvent(scrollYProgress, 'change', (v) => {
+    const video = videoRef.current
+    if (!video || document.hidden) return
+    const wasInView = inViewRef.current
+    const isInView = v >= 0 && v <= 1
+    inViewRef.current = isInView
+    if (isInView && !wasInView) {
+      video.play().catch(() => {})
+    } else if (!isInView && wasInView) {
+      video.pause()
+    }
+  })
+
   useEffect(() => {
     const video = videoRef.current
-    const media = mediaRef.current
-    if (!video || !media) return
+    if (!video) return
 
-    let isIntersecting = false
+    const v = scrollYProgress.get()
+    if (!document.hidden && v >= 0 && v <= 1) {
+      inViewRef.current = true
+      video.play().catch(() => {})
+    }
 
-    const updatePlayState = () => {
-      if (!document.hidden && isIntersecting) {
+    const handleVisibilityChange = () => {
+      if (!document.hidden && inViewRef.current) {
         video.play().catch(() => {})
       } else {
         video.pause()
       }
     }
 
-    const handleVisibilityChange = () => updatePlayState()
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        isIntersecting = entry.isIntersecting
-        updatePlayState()
-      },
-      { threshold: 0 }
-    )
-
-    observer.observe(media)
     document.addEventListener('visibilitychange', handleVisibilityChange)
 
     const unmuteOnce = () => setUserInteracted(true)
     document.addEventListener('pointerdown', unmuteOnce, { once: true })
 
     return () => {
-      observer.disconnect()
       document.removeEventListener('visibilitychange', handleVisibilityChange)
       document.removeEventListener('pointerdown', unmuteOnce)
     }
@@ -95,7 +99,6 @@ export function YearChapter({ data, index }: YearChapterProps) {
       )}
     >
       <motion.div
-        ref={mediaRef}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: '-100px' }}
