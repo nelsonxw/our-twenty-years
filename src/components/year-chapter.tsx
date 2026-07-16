@@ -60,7 +60,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
       >
         <motion.div
           style={{ y, scale }}
-          className="relative h-full w-full"
+          className="relative h-full w-full bg-black"
         >
           {data.heroVideo ? (
             isGoogleDrive ? (
@@ -74,11 +74,11 @@ export function YearChapter({ data, index }: YearChapterProps) {
             ) : (
               <video
                 src={data.heroVideo}
-                controls
-                muted
+                autoPlay
                 loop
                 playsInline
-                className="h-full w-full object-cover"
+                controls
+                className="h-full w-full object-contain"
                 aria-label={`${data.title} video`}
               />
             )
