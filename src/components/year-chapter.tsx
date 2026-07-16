@@ -123,7 +123,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
                 loop
                 playsInline
                 controls
-                className="h-full w-full object-contain"
+                className="h-full w-full bg-rose-950 bg-[url('/rose-pattern.svg')] bg-[length:120px_120px] bg-repeat object-contain"
                 aria-label={`${data.title} video`}
               />
             )
