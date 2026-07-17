@@ -5,7 +5,7 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { Heart } from 'lucide-react'
 import { Lightbox } from './lightbox'
-import { cn } from '@/lib/utils'
+import { cn, playMediaSafely } from '@/lib/utils'
 import type { YearData } from '@/lib/types'
 
 interface YearChapterProps {
@@ -55,7 +55,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
     if (!video) return
     isInViewRef.current = isInView
     if (!document.hidden && isInView) {
-      video.play().catch(() => {})
+      playMediaSafely(video)
     } else {
       video.pause()
     }
@@ -67,7 +67,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
 
     const handleVisibilityChange = () => {
       if (!document.hidden && isInViewRef.current) {
-        video.play().catch(() => {})
+        playMediaSafely(video)
       } else {
         video.pause()
       }
