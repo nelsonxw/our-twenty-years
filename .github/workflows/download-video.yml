@@ -8,7 +8,7 @@ permissions:
 
 env:
   GOOGLE_DRIVE_FILE_ID: 1GqVDKlGXPKvrpGynKsc7kpUFdBXyqGbR
-  VIDEO_PATH: public/videos/2006-hero.mp4
+  VIDEO_PATH: public/videos/marriedvideo.mp4
 
 jobs:
   download-and-commit:

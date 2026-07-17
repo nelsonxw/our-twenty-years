@@ -1,7 +1,8 @@
 from playwright.sync_api import sync_playwright
+import os
 import sys
 
-URL = "http://localhost:3001"
+URL = os.environ.get("TEST_URL", "http://localhost:3000")
 
 
 def wait_for_video_state(page, expected_paused: bool, timeout_ms: int = 30000):
