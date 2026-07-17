@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Markdown } from './markdown'
+import { reveal } from '@/lib/animations'
 
 interface ReflectionProps {
   content: string
@@ -21,10 +22,7 @@ export function Reflection({ content }: ReflectionProps) {
       <div className="absolute inset-0 bg-ivory/60 dark:bg-navy/70" />
 
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-100px' }}
-        transition={{ duration: 1 }}
+        {...reveal({ y: 40, duration: 1 })}
         className="relative z-10 mx-auto max-w-3xl px-6 py-24 text-center lg:py-32"
       >
         <h2 className="font-serif text-4xl text-navy dark:text-ivory lg:text-5xl">

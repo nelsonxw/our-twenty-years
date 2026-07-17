@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useInView, animate } from 'framer-motion'
+import { REVEAL_VIEWPORT } from '@/lib/animations'
 
 interface AnimatedCounterProps {
   to: number
@@ -10,7 +11,7 @@ interface AnimatedCounterProps {
 
 export function AnimatedCounter({ to, duration = 2.5 }: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, REVEAL_VIEWPORT)
   const [display, setDisplay] = useState(0)
 
   useEffect(() => {

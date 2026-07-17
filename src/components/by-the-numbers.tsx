@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { AnimatedCounter } from './animated-counter'
+import { reveal } from '@/lib/animations'
 
 const stats = [
   { label: 'Years Together', value: 20 },
@@ -15,10 +16,7 @@ export function ByTheNumbers() {
     <section className="relative bg-navy py-24 text-ivory lg:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.8 }}
+          {...reveal({ y: 30 })}
           className="mb-16 text-center"
         >
           <h2 className="font-serif text-4xl text-champagne lg:text-5xl">
@@ -33,10 +31,7 @@ export function ByTheNumbers() {
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
+              {...reveal({ y: 30, duration: 0.6, delay: i * 0.1 })}
               className="text-center"
             >
               <div className="font-serif text-5xl text-champagne lg:text-6xl">

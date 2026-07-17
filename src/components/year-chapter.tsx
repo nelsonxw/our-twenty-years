@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Heart } from 'lucide-react'
 import { Lightbox } from './lightbox'
 import { cn } from '@/lib/utils'
+import { reveal } from '@/lib/animations'
 import type { YearData } from '@/lib/types'
 
 interface YearChapterProps {
@@ -95,10 +96,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
     >
       <motion.div
         ref={mediaRef}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: '-100px' }}
-        transition={{ duration: 1, ease: 'easeOut' }}
+        {...reveal({ y: 0, duration: 1 })}
         className="relative h-[60vh] w-full overflow-hidden lg:h-auto lg:w-1/2 lg:min-h-screen"
       >
         <motion.div
@@ -148,10 +146,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
 
       <div className="flex w-full flex-col justify-center bg-ivory/90 px-8 py-16 lg:w-1/2 lg:px-16 lg:py-24 dark:bg-navy/90">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+          {...reveal({ y: 40, delay: 0.2 })}
         >
           <span className="font-serif text-6xl text-champagne lg:text-8xl">
             {data.year}
