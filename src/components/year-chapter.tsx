@@ -14,6 +14,8 @@ interface YearChapterProps {
 }
 
 export function YearChapter({ data, index }: YearChapterProps) {
+  const hasChinese = (text: string) => /[\u4e00-\u9fa5]/.test(text)
+
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
   const [userInteracted, setUserInteracted] = useState(false)
@@ -156,10 +158,10 @@ export function YearChapter({ data, index }: YearChapterProps) {
           <span className="font-serif text-6xl text-champagne lg:text-8xl">
             {data.year}
           </span>
-          <h2 className="mt-4 font-serif text-3xl text-navy dark:text-ivory lg:text-5xl">
+          <h2 className={cn('mt-4 text-3xl text-navy dark:text-ivory lg:text-5xl', hasChinese(data.title) ? 'font-chinese' : 'font-serif')}>
             {data.title}
           </h2>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-warm-gray dark:text-[#A8A6C8]">
+          <p className={cn('mt-6 max-w-xl text-lg leading-relaxed text-warm-gray dark:text-[#A8A6C8]', hasChinese(data.summary) && 'font-chinese')}>
             {data.summary}
           </p>
 
@@ -171,7 +173,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
                   className="flex items-center gap-3 text-navy/80 dark:text-ivory/80"
                 >
                   <Heart className="h-4 w-4 text-champagne" />
-                  <span>{milestone}</span>
+                  <span className={cn(hasChinese(milestone) && 'font-chinese')}>{milestone}</span>
                 </li>
               ))}
             </ul>
