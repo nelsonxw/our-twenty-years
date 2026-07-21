@@ -48,7 +48,11 @@
       "/images/2007/new life_ 034.jpg",
       "/images/2007/new life_ 040.jpg",
       "/images/2007/new life_ 044.jpg",
-      "/images/2007/new life_ 049.jpg"
+      "/images/2007/new life_ 049.jpg",
+      "/images/2007/DSC03745.JPG",
+      "/images/2007/DSC04420.JPG",
+      "/images/2007/DSC03380.JPG",
+      "/images/2007/DSCN3334.JPG"
     ]
   },
   {
@@ -65,8 +69,8 @@
       "/images/2008/DSCN3855.JPG",
       "/images/2008/baby Richard_ 001.jpg",
       "/images/2008/baby Richard_ 019.jpg",
-      "/images/2008/baby Richard_2 wks_ 044.png",
       "/images/2008/baby Richard_2 wks_ 014.jpg",
+      "/images/2008/baby Richard_2 wks_ 044.png",
       "/images/2008/baby Richard_4 wks_ 021.png",
       "/images/2008/baby Richard_6 wks_ 025.jpg",
       "/images/2008/baby Richard_6 wks_ 033.jpg"
@@ -81,19 +85,19 @@
       "爸爸妈妈的宝贝",
       "从此多了一个生日，永记心底"
     ],
-    "heroImage": "/images/2009/P15.jpg",
+    "heroImage": "/images/2009/portrait2.png",
     "galleryImages": [
+      "/images/2009/DSC00429.JPG",
+      "/images/2009/DSCN5085.JPG",
+      "/images/2009/baby Richard_23 wks_ 006.jpg",
+      "/images/2009/baby Richard_26 wks_ 001.jpg",
+      "/images/2009/baby one year old birthday party_ 045ps.jpg",
+      "/images/2009/portrait6.png",
+      "/images/2009/portrait10.png",
       "/images/2009/0014.jpg",
       "/images/2009/0061.jpg",
       "/images/2009/0067.jpg",
-      "/images/2009/0078.jpg",
-      "/images/2009/DSC00429.JPG",
-      "/images/2009/DSCN5085.JPG",
-      "/images/2009/P10.jpg",
-      "/images/2009/P12.jpg",
-      "/images/2009/baby Richard_23 wks_ 006.jpg",
-      "/images/2009/baby one year old birthday party_ 045ps.jpg",
-      "/images/2009/baby Richard_26 wks_ 001.jpg"
+      "/images/2009/0078.jpg"
     ]
   },
   {
@@ -116,7 +120,7 @@
       "/images/2010/DSC02120.JPG",
       "/images/2010/DSC02121.JPG",
       "/images/2010/DSC02127.JPG",
-      "/images/2010/DSC00687.JPG",
+      "/images/2010/DSC02178.JPG",
       "/images/2010/DSC02201.JPG",
       "/images/2010/DSC02209.JPG",
       "/images/2010/DSC02228.JPG",
@@ -125,7 +129,7 @@
       "/images/2010/DSC03631.JPG",
       "/images/2010/DSC03892.JPG",
       "/images/2010/DSC03899.JPG",
-      "/images/2010/DSC02178.JPG"
+      "/images/2010/DSC00687.JPG"
     ]
   },
   {
@@ -139,6 +143,7 @@
     ],
     "heroImage": "/images/2011/DSC04830.JPG",
     "galleryImages": [
+      "/images/2011/DSC_1132.JPG",
       "/images/2011/DSC04262.JPG",
       "/images/2011/DSC04277.JPG",
       "/images/2011/DSC04351.JPG",
@@ -147,55 +152,63 @@
       "/images/2011/DSC04577.JPG",
       "/images/2011/DSC05000.JPG",
       "/images/2011/DSC05016.JPG",
-      "/images/2011/DSC_1132.JPG"
+      "/images/2011/DSC04072.JPG",
+      "/images/2011/DSC04165.JPG"
     ]
   },
   {
     "year": 2012,
-    "title": "Building Dreams",
-    "summary": "We traded weekend spontaneity for saving, planning, and building something lasting. It was tedious and beautiful, the quiet architecture of a shared future.",
+    "title": "The Magic Moment",
+    "summary": "Life brings occasional surprises, yet most days are ordinary and plain. I wish I could be a funnier, more energetic and more interesting husband, someone who could make you laugh every single day. Your smiles are my favorite sight, whether we are at home, out exploring, or simply spending quiet moments together.",  
     "milestones": [
-      "Started college fund",
-      "Began home search",
-      "Celebrated five years"
+      "Trip to Disney World",
+      "Trip to San Antonio Zoo",
+      "Trip to nearby lake"
     ],
-    "heroImage": "https://picsum.photos/seed/2012/1920/1080",
+    "heroImage": "/images/2012/36111620000.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2012-g1/800/600",
-      "https://picsum.photos/seed/2012-g2/800/600",
-      "https://picsum.photos/seed/2012-g3/800/600"
+      "/images/2012/DSC00878.jpg",
+      "/images/2012/DSC00886.jpg",
+      "/images/2012/DSC04469.JPG",
+      "/images/2012/DSC05591.JPG"
     ]
   },
   {
     "year": 2013,
-    "title": "Family Adventures",
-    "summary": "The three of us packed into the car and drove to the shore. Sandcastles, boardwalks, and sticky fingers became the language of our new rhythm.",
+    "title": "有缘人",
+    "summary": "我相信缘份。如果黛玉和宝玉有前世姻缘，那你我今世夫妻也必是命中注定。为什么你历经了人海浮沉而最终选择了我？为什么我久候良缘而不遇，偏偏电话找到了你？所有的等待，都只是为了在恰好的时间遇见有缘人。",  
     "milestones": [
-      "Beach vacation",
-      "First amusement park visit",
-      "Built a sandbox in the yard"
+      "你我有缘人，修得同船渡。",
+      "老鼠上了老鼠船，上去容易下来难。",
+      "人海之中，找到了你，一切变得有意义。"
     ],
-    "heroImage": "https://picsum.photos/seed/2013/1920/1080",
+    "heroImage": "/images/2013/DSC09036.JPG",
     "galleryImages": [
-      "https://picsum.photos/seed/2013-g1/800/600",
-      "https://picsum.photos/seed/2013-g2/800/600",
-      "https://picsum.photos/seed/2013-g3/800/600"
+      "/images/2013/DSC05427.JPG",
+      "/images/2013/DMG-121112-MnMCanada8x10-3322830.jpg",
+      "/images/2013/DMG-121115-Lumieres8x10-3352523.jpg",
+      "/images/2013/DMG-121116-Mickey_Sorcerer8x10-3350871.jpg",
+      "/images/2013/DSC05252.JPG",
+      "/images/2013/DSC05370.JPG",
+      "/images/2013/DSC07973.JPG"
+      
     ]
   },
   {
     "year": 2014,
-    "title": "Loss and Love",
-    "summary": "We said goodbye to someone we loved too soon. Grief sat with us at the kitchen table, but so did grace, and we learned to hold each other a little tighter.",
+    "title": "Living in Harmony",
+    "summary": "More than anything, I want harmony and peace in our marriage. I left behind verbal violence and wanted to build a relationship where all of us feel respected and loved. I know I haven't always communicated well when we disagreed, and I am committed to learning better ways.  My old habit was to withdraw and keep quiet during heated arguments, but it didn't work every time and created more distance between us.  I will change, and please help me make it better.",
     "milestones": [
-      "Honored a loved one",
-      "Created new rituals",
-      "Learned to grieve together"
+      "Focus on understanding before solving",
+      "It's okay to pause but the important part is agreeing to return to the conversation",
+      "Repairing quickly after conflict can prevent resentment from building"
     ],
-    "heroImage": "https://picsum.photos/seed/2014/1920/1080",
+    "heroImage": "/images/2014/IMG_1408.JPG",
     "galleryImages": [
-      "https://picsum.photos/seed/2014-g1/800/600",
-      "https://picsum.photos/seed/2014-g2/800/600",
-      "https://picsum.photos/seed/2014-g3/800/600"
+      "/images/2014/DSC06287.JPG",
+      "/images/2014/DSC07796.JPG",
+      "/images/2014/IMG_0277.JPG",
+      "/images/2014/IMG_9808.JPG"
     ]
   },
   {
