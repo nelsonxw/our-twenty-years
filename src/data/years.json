@@ -52,7 +52,8 @@
       "/images/2007/DSC03745.JPG",
       "/images/2007/DSC04420.JPG",
       "/images/2007/DSC03380.JPG",
-      "/images/2007/DSCN3334.JPG"
+      "/images/2007/DSCN3334.JPG",
+      "/images/2007/new life2_ 021.png"
     ]
   },
   {
@@ -73,7 +74,8 @@
       "/images/2008/baby Richard_2 wks_ 044.png",
       "/images/2008/baby Richard_4 wks_ 021.png",
       "/images/2008/baby Richard_6 wks_ 025.jpg",
-      "/images/2008/baby Richard_6 wks_ 033.jpg"
+      "/images/2008/baby Richard_6 wks_ 033.jpg",
+      "/images/2008/baby Richard_ 025.png"
     ]
   },
   {
@@ -97,7 +99,8 @@
       "/images/2009/0014.jpg",
       "/images/2009/0061.jpg",
       "/images/2009/0067.jpg",
-      "/images/2009/0078.jpg"
+      "/images/2009/0078.jpg",
+      "/images/2009/portrait2.png"
     ]
   },
   {
@@ -129,7 +132,8 @@
       "/images/2010/DSC03631.JPG",
       "/images/2010/DSC03892.JPG",
       "/images/2010/DSC03899.JPG",
-      "/images/2010/DSC00687.JPG"
+      "/images/2010/DSC00687.JPG",
+      "/images/2010/family at space needle.jpg"
     ]
   },
   {
@@ -153,13 +157,14 @@
       "/images/2011/DSC05000.JPG",
       "/images/2011/DSC05016.JPG",
       "/images/2011/DSC04072.JPG",
-      "/images/2011/DSC04165.JPG"
+      "/images/2011/DSC04165.JPG",
+      "/images/2011/DSC04830.JPG"
     ]
   },
   {
     "year": 2012,
     "title": "The Magic Moment",
-    "summary": "Life brings occasional surprises, yet most days are ordinary and plain. I wish I could be a funnier, more energetic and more interesting husband, someone who could make you laugh every single day. Your smiles are my favorite sight, whether we are at home, out exploring, or simply spending quiet moments together.",  
+    "summary": "Life brings occasional surprises, yet most days are ordinary and plain. I wish I could be a funnier, more energetic and more interesting husband, someone who could make you laugh every single day. Your smiles are my favorite sight, whether we are at home, out exploring, or simply spending quiet moments together.",
     "milestones": [
       "Trip to Disney World",
       "Trip to San Antonio Zoo",
@@ -170,13 +175,14 @@
       "/images/2012/DSC00878.jpg",
       "/images/2012/DSC00886.jpg",
       "/images/2012/DSC04469.JPG",
-      "/images/2012/DSC05591.JPG"
+      "/images/2012/DSC05591.JPG",
+      "/images/2012/36111620000.jpg"
     ]
   },
   {
     "year": 2013,
     "title": "有缘人",
-    "summary": "我相信缘份。如果黛玉和宝玉有前世姻缘，那你我今世夫妻也必是命中注定。为什么你历经了人海浮沉而最终选择了我？为什么我久候良缘而不遇，偏偏电话找到了你？所有的等待，都只是为了在恰好的时间遇见有缘人。",  
+    "summary": "我相信缘份。如果黛玉和宝玉有前世姻缘，那你我今世夫妻也必是命中注定。为什么你历经了人海浮沉而最终选择了我？为什么我久候良缘而不遇，偏偏电话找到了你？所有的等待，都只是为了在恰好的时间遇见有缘人。",
     "milestones": [
       "你我有缘人，修得同船渡。",
       "老鼠上了老鼠船，上去容易下来难。",
@@ -190,8 +196,8 @@
       "/images/2013/DMG-121116-Mickey_Sorcerer8x10-3350871.jpg",
       "/images/2013/DSC05252.JPG",
       "/images/2013/DSC05370.JPG",
-      "/images/2013/DSC07973.JPG"
-      
+      "/images/2013/DSC07973.JPG",
+      "/images/2013/DSC09036.JPG"
     ]
   },
   {
@@ -208,87 +214,100 @@
       "/images/2014/DSC06287.JPG",
       "/images/2014/DSC07796.JPG",
       "/images/2014/IMG_0277.JPG",
-      "/images/2014/IMG_9808.JPG"
+      "/images/2014/IMG_9808.JPG",
+      "/images/2014/IMG_1408.JPG"
     ]
   },
   {
     "year": 2015,
-    "title": "Moving Forward",
-    "summary": "A new home, a garden, and a mailbox with our name on it. We made a backyard for barbecues, fireflies, and the slow business of growing roots.",
+    "title": "你是我的跳跳虎",
+    "summary": "和你在一起，我更像那只熊，懒懒散散，健忘憨厚。而你每天忙忙碌碌，东擦擦西扫扫，虽然不是跳来跳去，但也是一刻不停。你是我们的动力火车，引领着我们不断前进，为这个家为我们的孩子付出更多的努力，做更好的自己。我总佩服你有好点子，你说我却不爱动脑筋，一拨一动。你是人情世故的好手，那些棘手繁琐的你来我往，在你面前都变得轻松自然。好厉害👍",
     "milestones": [
-      "Bought a house",
-      "Planted a garden",
-      "First backyard party"
+      "充满活力",
+      "乐观自信",
+      "热情友善"
     ],
-    "heroImage": "https://picsum.photos/seed/2015/1920/1080",
+    "heroImage": "/images/2015/IMG_1292.JPG",
     "galleryImages": [
-      "https://picsum.photos/seed/2015-g1/800/600",
-      "https://picsum.photos/seed/2015-g2/800/600",
-      "https://picsum.photos/seed/2015-g3/800/600"
+      "/images/2015/2F0A1919.JPG",
+      "/images/2015/2F0A1923.JPG",
+      "/images/2015/DSC08541.JPG",
+      "/images/2015/IMG_0796.JPG",
+      "/images/2015/IMG_0799.JPG",
+      "/images/2015/IMG_1068.JPG",
+      "/images/2015/IMG_1716.JPG"
     ]
   },
   {
     "year": 2016,
-    "title": "Milestone Birthday",
-    "summary": "Forty looked good on us. Surrounded by friends, we laughed about the years behind us and raised a glass to the ones still ahead.",
+    "title": "Up",
+    "summary": "Sometimes I wish we could live in the house featured in the movie 'Up' so that we can travel to many places easily and comfortably.  We both love road trips and driving RVs around to explore places near and far.  This will be an upgrade to RV since we can do that without leaving our house. I enjoy travelling with you, it is always relaxed and not rushed.  Plus you take good care of planning and packing everything for me 😂",
     "milestones": [
-      "Surprise party",
-      "Renewed a dream",
-      "Weekend getaway"
+      "Favorate road trip - Smokie Mountain",
+      "Places want to visit next - Yellowstone National Park",
+      "Place want to visit again - Banff National Park"      
     ],
-    "heroImage": "https://picsum.photos/seed/2016/1920/1080",
+    "heroImage": "/images/2016/IMG_3468.JPG",
     "galleryImages": [
-      "https://picsum.photos/seed/2016-g1/800/600",
-      "https://picsum.photos/seed/2016-g2/800/600",
-      "https://picsum.photos/seed/2016-g3/800/600"
+      "/images/2016/155.jpg",
+      "/images/2016/183.jpg",
+      "/images/2016/498.jpg",
+      "/images/2016/DSC03324.JPG",
+      "/images/2016/DSC05118.JPG",
+      "/images/2016/DSC05126.JPG",
+      "/images/2016/DSC05428.JPG",
+      "/images/2016/DSC07533.JPG",
+      "/images/2016/DSC07568.JPG",
+      "/images/2016/DSC04144.JPG"
     ]
   },
   {
     "year": 2017,
-    "title": "New Horizons",
-    "summary": "Passports stamped, trains caught, and ancient streets wandered. We ate bread in tiny cafés and remembered that the world was still wide open.",
+    "title": "万里长城",
+    "summary": "万里长城永不倒，要不倒是有条件的。坚固的地基 + 梯形结构 + 砖石包砌 + 糯米灰浆 + 良好排水 + 持续维护 我坚信我们的婚姻像坚固的长城，两个人个性好，有爱心（地基），相似的价值观（结构），独立人格（砖石包砌），深爱的孩子们（糯米灰浆）。我反省到，排水（克服焦虑）和维护（互相谦让和支持）将是持续努力的重点。你我一起添砖加瓦，让长城更长。我爱你。",
     "milestones": [
-      "Trip to Europe",
-      "First overseas family flight",
-      "Collected too many postcards"
+      "你看我们脸型越来越像",
+      "身材越来越像",
+      "越看越有夫妻相"
     ],
-    "heroImage": "https://picsum.photos/seed/2017/1920/1080",
+    "heroImage": "/images/2017/IMG_20171001_123755110.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2017-g1/800/600",
-      "https://picsum.photos/seed/2017-g2/800/600",
-      "https://picsum.photos/seed/2017-g3/800/600"
+      "/images/2017/DSC08132.JPG",
+      "/images/2017/DSC08181.JPG",
+      "/images/2017/IMG_20171001_123740962.jpg"      
     ]
   },
   {
     "year": 2018,
-    "title": "The Teen Years",
-    "summary": "School projects, sports games, and the quiet ache of watching someone grow up. We found ourselves in the passenger seat of someone else’s becoming.",
+    "title": "Our New Member",
+    "summary": "Welcome home, my baby! Your mother and I are so thrilled to be your parents.  We will love you and give you the best we can, no matter how naughty you become, no matter how struggled you feel about mathematics, and no matter who you choose to be...",
     "milestones": [
-      "First school dance",
-      "Learned to drive",
-      "Family game night tradition"
+      "We restarted the clock and all over again",
+      "Bottle feeding, diaper changes, and sleep losses",
+      "Because we wanted, there is no regret"
     ],
-    "heroImage": "https://picsum.photos/seed/2018/1920/1080",
+    "heroImage": "/images/2018/Family photo 2018-111.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2018-g1/800/600",
-      "https://picsum.photos/seed/2018-g2/800/600",
-      "https://picsum.photos/seed/2018-g3/800/600"
+      "/images/2018/2F0A2396.JPG",
+      "/images/2018/IMG_4913.JPG",
+      "/images/2018/IMG_0155.JPG",
+      "/images/2018/IMG_20180721_095227653_LL.jpg"      
     ]
   },
   {
     "year": 2019,
-    "title": "Side by Side",
-    "summary": "Career milestones arrived, and we celebrated them together. Victories felt sweeter when shared, and setbacks felt lighter when halved.",
+    "title": "众星捧月",
+    "summary": "独身子女长大的我总觉得家里至少应该有两个孩子。爸爸妈妈的爱能量实在太多，一个孩子受不了的，要分享着用才好。谁知道分是分了，但爸妈的产出也跟着涨，每个孩子得到的爱一点不少。多了的是双份的焦虑和烦恼，秃掉的头发和大叫。好了好了，快点吃饭快点睡觉！",
     "milestones": [
-      "Major career milestone",
-      "Paid off a debt",
-      "Revisited our wedding song"
+      "一只哈巴狗，坐在大门口，",
+      "眼睛黑黝黝，想吃肉骨头。",
+      "“祝你生日快乐，祝你生日快乐，快点鼓掌、鼓掌！”😂😂😂"
     ],
-    "heroImage": "https://picsum.photos/seed/2019/1920/1080",
+    "heroImage": "/images/2019/IMG_20191031_181844.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2019-g1/800/600",
-      "https://picsum.photos/seed/2019-g2/800/600",
-      "https://picsum.photos/seed/2019-g3/800/600"
+      "/images/2019/IMG_20190331_131314.jpg",
+      "/images/2019/IMG_20191031_181915.jpg",
+      "/images/2019/IMG_20191116_173025.jpg"
     ]
   },
   {
