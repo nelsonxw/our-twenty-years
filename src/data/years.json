@@ -105,7 +105,7 @@
   },
   {
     "year": 2010,
-    "title": "On The Move",
+    "title": "On the Move",
     "summary": "The world got bigger and we travelled farther. No matter where we went, Mom would always ensure we got 100% prepared. If travelled by car, there would be plenty of food and snack on the trip. If stayed overnight, then the right pieces of clothes and towers (and everything) would fill up the suit cases. You are so organized, my love. Did I tell you - I am spoiled 🙂",
     "milestones": [
       "We went to Seattle",
@@ -235,6 +235,7 @@
       "/images/2015/IMG_0796.JPG",
       "/images/2015/IMG_0799.JPG",
       "/images/2015/IMG_1068.JPG",
+      "/images/2015/IMG_1292.JPG",
       "/images/2015/IMG_1716.JPG"
     ]
   },
@@ -243,9 +244,9 @@
     "title": "Up",
     "summary": "Sometimes I wish we could live in the house featured in the movie 'Up' so that we can travel to many places easily and comfortably.  We both love road trips and driving RVs around to explore places near and far.  This will be an upgrade to RV since we can do that without leaving our house. I enjoy travelling with you, it is always relaxed and not rushed.  Plus you take good care of planning and packing everything for me 😂",
     "milestones": [
-      "Favorate road trip - Smokie Mountain",
+      "Favorate road trip - Great Smoky Mountain",
       "Places want to visit next - Yellowstone National Park",
-      "Place want to visit again - Banff National Park"      
+      "Place want to visit again - Banff National Park"
     ],
     "heroImage": "/images/2016/IMG_3468.JPG",
     "galleryImages": [
@@ -253,12 +254,13 @@
       "/images/2016/183.jpg",
       "/images/2016/498.jpg",
       "/images/2016/DSC03324.JPG",
+      "/images/2016/DSC04144.JPG",
       "/images/2016/DSC05118.JPG",
       "/images/2016/DSC05126.JPG",
       "/images/2016/DSC05428.JPG",
       "/images/2016/DSC07533.JPG",
       "/images/2016/DSC07568.JPG",
-      "/images/2016/DSC04144.JPG"
+      "/images/2016/IMG_3468.JPG"
     ]
   },
   {
@@ -274,7 +276,8 @@
     "galleryImages": [
       "/images/2017/DSC08132.JPG",
       "/images/2017/DSC08181.JPG",
-      "/images/2017/IMG_20171001_123740962.jpg"      
+      "/images/2017/IMG_20171001_123740962.jpg",
+      "/images/2017/IMG_20171001_123755110.jpg"
     ]
   },
   {
@@ -289,9 +292,11 @@
     "heroImage": "/images/2018/Family photo 2018-111.jpg",
     "galleryImages": [
       "/images/2018/2F0A2396.JPG",
-      "/images/2018/IMG_4913.JPG",
+      "/images/2018/Family photo 2018-111.jpg",
       "/images/2018/IMG_0155.JPG",
-      "/images/2018/IMG_20180721_095227653_LL.jpg"      
+      "/images/2018/IMG_0305.JPG",
+      "/images/2018/IMG_20180721_095227653_LL.jpg",
+      "/images/2018/IMG_4913.JPG"
     ]
   },
   {
@@ -306,72 +311,100 @@
     "heroImage": "/images/2019/IMG_20191031_181844.jpg",
     "galleryImages": [
       "/images/2019/IMG_20190331_131314.jpg",
+      "/images/2019/IMG_20190701_103553.jpg",
+      "/images/2019/IMG_20191031_181844.jpg",
       "/images/2019/IMG_20191031_181915.jpg",
       "/images/2019/IMG_20191116_173025.jpg"
     ]
   },
   {
     "year": 2020,
-    "title": "A Year Apart and Together",
-    "summary": "The world closed its doors, but our home opened in new ways. Board games, bread baking, and long walks became the scaffolding of resilience.",
+    "title": "A Year the World Stopped",
+    "summary": "The world locked down, and the streets became deserted. All noises and bustle vanished and replaced by the songs of birds that seemed louder than ever. Stepped outside our door, we became the only spectators witnessing a vast and tranquil landscape.",
     "milestones": [
-      "Learned to work from home",
-      "Took up baking",
-      "Wrote letters to friends"
+      "We learned to work and study from home",
+      "We started online grocery shopping and wiping down everything we brought in",
+      "We found Dana Peak Park (our favorite) where we could escape and breathe some fresh air once a week"
     ],
-    "heroImage": "https://picsum.photos/seed/2020/1920/1080",
+    "heroImage": "/images/2020/IMG_20200403_115832.png",
     "galleryImages": [
-      "https://picsum.photos/seed/2020-g1/800/600",
-      "https://picsum.photos/seed/2020-g2/800/600",
-      "https://picsum.photos/seed/2020-g3/800/600"
+      "/images/2020/IMG_20201107_163532.jpg",
+      "/images/2020/map.jpg"
     ]
   },
   {
     "year": 2021,
-    "title": "New Puppy",
-    "summary": "A bundle of chaos with paws arrived. Early mornings, chewed slippers, and unconditional joy reminded us how good it is to welcome new love.",
+    "title": "走过新冠",
+    "summary": "新冠病毒进入第二年，带来的痛苦与日俱生。与社会隔绝的抑郁和全世界死亡数据带来的焦虑，不断挑战我们的忍受力。老婆你承受压力最大，一直提心吊胆，默默为全家的安全保驾护航，付出了沉重的代价，每次想到这就悔之莫及😢 我们竭尽全力保持生活的规律，周末四处寻找无人区放风，释放压抑的心情。这极大地安抚了每个人的心灵，让我们变得坚强，走过一段艰辛的岁月。老婆，没有你不行啊！",
     "milestones": [
-      "Adopted a dog",
-      "Named her together",
-      "First family hike with puppy"
+      "我们去海边",
+      "我们去爬魔石山",
+      "我们住进集装箱改造的小木屋"
     ],
-    "heroImage": "https://picsum.photos/seed/2021/1920/1080",
+    "heroImage": "/images/2021/IMG_20201227_151813.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2021-g1/800/600",
-      "https://picsum.photos/seed/2021-g2/800/600",
-      "https://picsum.photos/seed/2021-g3/800/600"
+      "/images/2021/IMG_20210116_151053.jpg",
+      "/images/2021/IMG_20210116_151105.jpg",
+      "/images/2021/IMG_20210116_151442.jpg",
+      "/images/2021/IMG_20210116_154406.jpg",
+      "/images/2021/IMG_20210116_154913.jpg",
+      "/images/2021/IMG_20210116_160151.jpg",
+      "/images/2021/IMG_20210116_161636.jpg",
+      "/images/2021/IMG_20210215_113445_1.jpg",
+      "/images/2021/IMG_20210328_165648.jpg",
+      "/images/2021/IMG_20210410_170015.jpg",
+      "/images/2021/IMG_20210410_173924.jpg",
+      "/images/2021/IMG_20210424_160019.jpg",
+      "/images/2021/IMG_20210424_160557.jpg",
+      "/images/2021/IMG_20210515_161055.jpg",
+      "/images/2021/IMG_20210515_161347.jpg",
+      "/images/2021/IMG_20210531_103446.jpg",
+      "/images/2021/IMG_20210803_085643.jpg",
+      "/images/2021/IMG_20210812_082354.jpg",
+      "/images/2021/IMG_20210909_153507.jpg",
+      "/images/2021/IMG_20210909_154441.jpg",
+      "/images/2021/IMG_20210909_172142.jpg",
+      "/images/2021/IMG_20210909_172243.jpg",
+      "/images/2021/IMG_20210403_084710.jpg"
     ]
   },
   {
     "year": 2022,
-    "title": "Empty Nests and Full Hearts",
-    "summary": "The house grew quieter, but the silence held new conversations. We rediscovered date nights, lazy mornings, and the version of us that started it all.",
+    "title": "Walk Out of the Shadow",
+    "summary": "The whole family caught COVID virus at last.  Whatever... It could not stop us anymore.  We wanted to go back to the normal life (in safe way).  We talked about going further to places never visited before. Your exceptional trip planning and organization skills proved irreplaceable and every moment of laughter, joy, and unforgettable memories we shared was because of you.  Thank you!",
     "milestones": [
-      "First child left for college",
-      "Rediscovered date nights",
-      "Took a cooking class"
+      "We went to the mountains,",
+      "And stopped by the sea,",
+      "Also visited the park near to me."
     ],
-    "heroImage": "https://picsum.photos/seed/2022/1920/1080",
+    "heroImage": "/images/2022/IMG_20220424_151847.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2022-g1/800/600",
-      "https://picsum.photos/seed/2022-g2/800/600",
-      "https://picsum.photos/seed/2022-g3/800/600"
+      "/images/2022/IMG_20220428_120406.jpg",
+      "/images/2022/IMG_20220430_182545.jpg",
+      "/images/2022/IMG_20220702_200312.jpg",
+      "/images/2022/IMG_20220702_201446.jpg",
+      "/images/2022/PXL_20221012_190256775.jpg",
+      "/images/2022/PXL_20221012_190311880.jpg",
+      "/images/2022/PXL_20221024_002712598.jpg"
     ]
   },
   {
     "year": 2023,
-    "title": "Vow Renewal",
-    "summary": "In the backyard, surrounded by those who matter most, we said the words again. They meant more the second time, worn soft by the years.",
+    "title": "浴火重生",
+    "summary": "当电话里得知你确诊癌症时，我瞬间五雷轰顶。慌慌张张回到家里，和你泪眼相对。接下来的三个月里，夜不能寐，和你一起备受煎熬。所幸很快能够在最好的医院约上手术，且进行顺利。身边的朋友们给予了无比的关怀，远渡重洋只身前来的亲人也安抚了我们的焦虑。然而一波三折，一个月不到又做了第二次手术，痛在你身上，也疼在我心里。看着你病弱的身躯，我誓言挑起家庭的重担。短短两个月就让我真正体会到了当好一个家庭主妇的不易。不幸中的大幸，你逃过了化疗的摧残。你的坚强和韧性让你很快恢复了起来。年末来到疗伤圣地，在寂静的山谷和茫茫雪原中和你一起燃起新的生命力。就如手术前我们谈心时提到的，我无法想象没有你的日子里会何等寂寞，我不能没有你，最爱的老婆。",
     "milestones": [
-      "Vow renewal ceremony",
-      "Planted an anniversary tree",
-      "Hosted old friends"
+      "七月二十三日：得知噩耗",
+      "九月： 肿囊切除手术",
+      "十月： 胆囊切除手术"
     ],
-    "heroImage": "https://picsum.photos/seed/2023/1920/1080",
+    "heroImage": "/images/2023/PXL_20231226_211625286.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2023-g1/800/600",
-      "https://picsum.photos/seed/2023-g2/800/600",
-      "https://picsum.photos/seed/2023-g3/800/600"
+      "/images/2023/PXL_20231225_205609348.jpg",
+      "/images/2023/colorado.jpg",
+      "/images/2023/IMG_20231226_141735.jpg",
+      "/images/2023/IMG_20230618_083650.jpg",
+      "/images/2023/mmexport1681097393099.jpg"
+      
     ]
   },
   {

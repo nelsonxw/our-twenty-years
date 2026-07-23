@@ -36,6 +36,9 @@ export function YearChapter({ data, index }: YearChapterProps) {
     : data.galleryImages
 
   const displayGallery = data.galleryImages.slice(0, 3)
+  const galleryCount = displayGallery.length
+  const isSingleGalleryImage = galleryCount === 1
+  const isWideGalleryLayout = galleryCount > 0 && galleryCount <= 2
 
   const isGoogleDrive =
     data.heroVideo?.startsWith('https://drive.google.com') ?? false
@@ -101,11 +104,11 @@ export function YearChapter({ data, index }: YearChapterProps) {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 1, ease: 'easeOut' }}
-        className="relative h-[60vh] w-full overflow-hidden lg:h-auto lg:w-1/2 lg:min-h-screen"
+        className="relative h-[60vh] w-full overflow-hidden bg-gradient-to-br from-champagne/30 via-ivory/20 to-transparent lg:h-auto lg:w-1/2 lg:min-h-screen dark:from-navy/40 dark:via-navy/20"
       >
         <motion.div
           style={{ y, scale }}
-          className="relative h-full w-full bg-black"
+          className="relative h-full w-full"
         >
           {data.heroVideo ? (
             isGoogleDrive ? (
@@ -179,13 +182,21 @@ export function YearChapter({ data, index }: YearChapterProps) {
             </ul>
           )}
 
-          {displayGallery.length > 0 && (
-            <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
+          {galleryCount > 0 && (
+            <div
+              className={cn(
+                'mt-10 grid gap-4',
+                isWideGalleryLayout ? 'grid-cols-1' : 'grid-cols-2 md:grid-cols-3'
+              )}
+            >
               {displayGallery.map((image, i) => (
                 <button
                   key={image}
                   onClick={() => openAt(i + (data.heroImage ? 1 : 0))}
-                  className="group relative aspect-[4/3] overflow-hidden rounded-lg"
+                  className={cn(
+                    'group relative overflow-hidden rounded-lg',
+                    isWideGalleryLayout ? 'aspect-[21/9]' : 'aspect-[4/3]'
+                  )}
                   aria-label={`View gallery image ${i + 1}`}
                 >
                   <Image
@@ -193,8 +204,15 @@ export function YearChapter({ data, index }: YearChapterProps) {
                     alt={`${data.title} gallery ${i + 1}`}
                     fill
                     loading="lazy"
-                    className="object-cover transition duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 50vw, 33vw"
+                    className={cn(
+                      'transition duration-500 group-hover:scale-105',
+                      isWideGalleryLayout ? 'object-contain' : 'object-cover'
+                    )}
+                    sizes={
+                      isWideGalleryLayout
+                        ? '(max-width: 1024px) 100vw, 50vw'
+                        : '(max-width: 768px) 50vw, 33vw'
+                    }
                   />
                 </button>
               ))}
