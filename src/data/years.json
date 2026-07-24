@@ -329,7 +329,9 @@
     "heroImage": "/images/2020/IMG_20200403_115832.png",
     "galleryImages": [
       "/images/2020/IMG_20201107_163532.jpg",
-      "/images/2020/map.jpg"
+      "/images/2020/map.jpg",
+      "/images/2020/IMG_20200403_115832.jpg",
+      "/images/2020/IMG_20200403_115832.png"
     ]
   },
   {
@@ -365,7 +367,8 @@
       "/images/2021/IMG_20210909_154441.jpg",
       "/images/2021/IMG_20210909_172142.jpg",
       "/images/2021/IMG_20210909_172243.jpg",
-      "/images/2021/IMG_20210403_084710.jpg"
+      "/images/2021/IMG_20210403_084710.jpg",
+      "/images/2021/IMG_20201227_151813.jpg"
     ]
   },
   {
@@ -385,7 +388,8 @@
       "/images/2022/IMG_20220702_201446.jpg",
       "/images/2022/PXL_20221012_190256775.jpg",
       "/images/2022/PXL_20221012_190311880.jpg",
-      "/images/2022/PXL_20221024_002712598.jpg"
+      "/images/2022/PXL_20221024_002712598.jpg",
+      "/images/2022/IMG_20220424_151847.jpg"
     ]
   },
   {
@@ -403,40 +407,50 @@
       "/images/2023/colorado.jpg",
       "/images/2023/IMG_20231226_141735.jpg",
       "/images/2023/IMG_20230618_083650.jpg",
-      "/images/2023/mmexport1681097393099.jpg"
-      
+      "/images/2023/mmexport1681097393099.jpg",
+      "/images/2023/PXL_20231226_211625286.jpg"
     ]
   },
   {
     "year": 2024,
-    "title": "Grand Adventures",
-    "summary": "We chased sunrises across temples, markets, and unfamiliar cities. Travel reminded us that curiosity is a habit that keeps a marriage young.",
+    "title": "Be With You",
+    "summary": "Life moves quickly and kids grow up fast.  The world keeps changing, old things becoming new.  But my desire remains the same: forever be with you.  In your kitchen I find love, in your arms I find my peace, and in our trips, I find happiness that will never cease.",
     "milestones": [
-      "Asia trip",
-      "Temple sunrise",
-      "Learned new dishes"
+      "Be with me - you will have a dedicated Uber driver forever, free",
+      "Be with me - you can turn off lights without leaving your bed",
+      "Be with me - your dish washer will always be organized and clean"
     ],
-    "heroImage": "https://picsum.photos/seed/2024/1920/1080",
+    "heroImage": "/images/2024/PXL_20240330_213303197.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2024-g1/800/600",
-      "https://picsum.photos/seed/2024-g2/800/600",
-      "https://picsum.photos/seed/2024-g3/800/600"
+      "/images/2024/IMG_20241228_144217.jpg",
+      "/images/2024/IMG_20241230_173252.jpg",
+      "/images/2024/PXL_20240505_205440873.PORTRAIT.jpg",
+      "/images/2024/PXL_20240624_012445305.jpg",
+      "/images/2024/PXL_20240807_081147553.jpg",
+      "/images/2024/PXL_20240807_092333476.PORTRAIT.jpg",
+      "/images/2024/PXL_20240808_025548342.jpg",
+      "/images/2024/PXL_20240808_041152971.jpg",
+      "/images/2024/PXL_20240810_021343424.jpg",
+      "/images/2024/PXL_20241004_004257954.MP.jpg",
+      "/images/2024/PXL_20241227_211123383.PORTRAIT.jpg",
+      "/images/2024/PXL_20250102_040525884.PORTRAIT.jpg",
+      "/images/2024/wx_camera_1735527179805.jpg"
     ]
   },
   {
     "year": 2025,
-    "title": "Slowing Down",
-    "summary": "We said no to more things and yes to quiet. Books, long walks, and simple meals became the luxury we had earned.",
+    "title": "我老婆的优点",
+    "summary": "我来王婆卖瓜，自卖自夸，说说我老婆的优点。情人眼里出西施，都有哪些好呢: 你身上有种让人舒服的美。这种美有知识的底蕴，自信的加持，经久耐看，是让我安心的风景。我老婆性格好，刚结婚的时候偏温柔淑雅，最近几年更多的是走的豪爽一派，喜怒爱骂，皆真性情也。我虽不想你常常动怒伤神，但也不愿你事事压抑自伤。脾气长了，嗓门长了，都不要紧。只要体重不长，身体健康，我就越来越喜欢。你的高情商也让我五体投地，羡慕嫉妒恨。待人得体，处事通透，许多我看不明白的人情世故，你总能一眼看透；许多我应付不了的场面，你总能处理得恰到好处。从你身上我学到了许多，是我真正的良师益友。最后还要夸夸老婆的动手能力，那真是上得厅堂下得厨房，饭做得好吃，家务打理得妥帖，电工做得优秀，让我这个肩不能挑、手不能提的文弱书生得了你这么个能文能武的大宝贝，怎么能不偷着乐呢？",
     "milestones": [
-      "Read more books",
-      "Started morning walks",
-      "Simplified the calendar"
+      "愿你眼里常有光，心平气和",
+      "愿你平安康宁，喜乐无忧",
+      "愿时光善待你，也善待我，让我们并肩同行"
     ],
-    "heroImage": "https://picsum.photos/seed/2025/1920/1080",
+    "heroImage": "/images/2025/IMG_20250817_104551_1.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2025-g1/800/600",
-      "https://picsum.photos/seed/2025-g2/800/600",
-      "https://picsum.photos/seed/2025-g3/800/600"
+      "/images/2025/PXL_20250104_012306947.MP.jpg",
+      "/images/2025/PXL_20251019_023145420.jpg",
+      "/images/2025/PXL_20251227_164214182.jpg"
     ]
   },
   {
