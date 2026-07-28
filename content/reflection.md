@@ -1,9 +1,9 @@
-# Looking Back
 
-When we stood at the altar twenty years ago, we thought we were beginning an adventure. We were — but it was far richer, harder, and more beautiful than we could have imagined.
 
-There were seasons of sunlight: the first apartment, the open road, the sound of a newborn’s cry. There were seasons of shadow: goodbyes that came too soon, sleepless nights, and the quiet weight of uncertainty. Through it all, we learned that love is less a feeling than a practice — a choice we make again each morning.
+二十年前我对你低唱“最浪漫的事”，心中憧憬和你一起慢慢变老。匆匆间路已行了一半，在这特殊的时刻停一下脚步，回首这些年收藏的点点滴滴，满心喜悦和感恩。请你拉着我的手，继续我们慢慢的旅程，不要犹豫，不要怀疑，一起面对已知的困难和未知的喜悦。让我们重温誓约，一起慢慢变老。
 
-We have not merely grown older; we have grown into each other. Your hand in mine is still my favorite home. Your laugh is still my favorite sound. The life we built, ordinary and extraordinary in the same breath, is the finest thing I know.
+过去的二十年世界变迁，我们身边也是日新月异，高科技不断翻新，推着全社会一起加速前进。未来可期，有多少惊喜在等待着我们，等着我们一起去体验。无人驾驶已经上路了，会飞的汽车也将普及。将来家里一定会有机器人管家来真正帮助你，解放我们的双手。医学必将突破，让我们的身体健康长寿。
 
-So here is to the twenty years behind us, and to every year still ahead. May they be slow, sweet, and ours.
+在滚滚历史洪流的裹挟中，时间不紧不慢地继续前行。一分一秒，不会因为人们的焦虑而加速，也不会因为AI的发达而减缓。在这恒定的脚步声中，我们在自己的花园里一起散步，种花、养草、浇水、修剪。活在当下，珍惜眼前人。一起看云卷云舒，一同听风声鸟鸣。把哥哥送进大学，把弟弟培养成人，你我的二人世界才刚刚开启，要慢慢地品味人生的浪漫。
+
+再见了，我们共同走过的二十年。你好，我们的下一个二十年！

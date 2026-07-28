@@ -28,9 +28,9 @@ export function Reflection({ content }: ReflectionProps) {
         className="relative z-10 mx-auto max-w-3xl px-6 py-24 text-center lg:py-32"
       >
         <h2 className="font-serif text-4xl text-navy dark:text-ivory lg:text-5xl">
-          Looking Back
+          Looking Forward
         </h2>
-        <div className="mt-12 text-left text-lg leading-relaxed text-navy/80 dark:text-ivory/80">
+        <div className="mt-12 text-left font-chinese text-xl leading-relaxed text-navy/80 dark:text-ivory/80 lg:text-2xl">
           <Markdown content={content} />
         </div>
       </motion.div>
