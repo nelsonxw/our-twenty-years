@@ -6,8 +6,8 @@ import { AnimatedCounter } from './animated-counter'
 const stats = [
   { label: 'Years Together', value: 20 },
   { label: 'Days Together', value: 7305 },
-  { label: 'Family Milestones', value: 4 },
-  { label: 'Adventures', value: 48 },
+  { label: 'Lovely Kids', value: 2 },
+  { label: 'States & Countries Visited', value: 24 },
 ]
 
 export function ByTheNumbers() {

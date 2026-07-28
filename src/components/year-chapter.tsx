@@ -15,6 +15,9 @@ interface YearChapterProps {
 
 export function YearChapter({ data, index }: YearChapterProps) {
   const hasChinese = (text: string) => /[\u4e00-\u9fa5]/.test(text)
+  const isPanoramicImage = (imagePath: string) => {
+    return imagePath.includes('map') || imagePath.toLowerCase().includes('panoram')
+  }
 
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
@@ -37,7 +40,6 @@ export function YearChapter({ data, index }: YearChapterProps) {
 
   const displayGallery = data.galleryImages.slice(0, 3)
   const galleryCount = displayGallery.length
-  const isSingleGalleryImage = galleryCount === 1
   const isWideGalleryLayout = galleryCount > 0 && galleryCount <= 2
 
   const isGoogleDrive =
@@ -104,11 +106,11 @@ export function YearChapter({ data, index }: YearChapterProps) {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 1, ease: 'easeOut' }}
-        className="relative h-[60vh] w-full overflow-hidden bg-gradient-to-br from-champagne/30 via-ivory/20 to-transparent lg:h-auto lg:w-1/2 lg:min-h-screen dark:from-navy/40 dark:via-navy/20"
+        className="relative h-[60vh] w-full overflow-hidden bg-gradient-to-br from-champagne/30 via-ivory/20 to-transparent lg:h-screen lg:w-1/2 dark:from-navy/40 dark:via-navy/20"
       >
         <motion.div
           style={{ y, scale }}
-          className="relative h-full w-full"
+          className="relative h-full w-full flex items-start justify-center pt-16 lg:pt-24"
         >
           {data.heroVideo ? (
             isGoogleDrive ? (
@@ -143,7 +145,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
                 alt={data.title}
                 fill
                 priority={index < 2}
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </button>
@@ -164,7 +166,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
           <h2 className={cn('mt-4 text-3xl text-navy dark:text-ivory lg:text-5xl', hasChinese(data.title) ? 'font-chinese' : 'font-serif')}>
             {data.title}
           </h2>
-          <p className={cn('mt-6 max-w-xl text-lg leading-relaxed text-warm-gray dark:text-[#A8A6C8]', hasChinese(data.summary) && 'font-chinese')}>
+          <p className={cn('mt-6 max-w-xl text-lg leading-relaxed text-warm-gray dark:text-[#A8A6C8]', hasChinese(data.summary) && 'font-chinese text-xl lg:text-2xl')}>
             {data.summary}
           </p>
 
@@ -173,7 +175,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
               {data.milestones.map((milestone) => (
                 <li
                   key={milestone}
-                  className="flex items-center gap-3 text-navy/80 dark:text-ivory/80"
+                  className={cn('flex items-center gap-3 text-navy/80 dark:text-ivory/80', hasChinese(milestone) && 'text-lg lg:text-xl')}
                 >
                   <Heart className="h-4 w-4 text-champagne" />
                   <span className={cn(hasChinese(milestone) && 'font-chinese')}>{milestone}</span>
@@ -182,20 +184,38 @@ export function YearChapter({ data, index }: YearChapterProps) {
             </ul>
           )}
 
-          {galleryCount > 0 && (
-            <div
-              className={cn(
-                'mt-10 grid gap-4',
-                isWideGalleryLayout ? 'grid-cols-1' : 'grid-cols-2 md:grid-cols-3'
-              )}
-            >
-              {displayGallery.map((image, i) => (
+        {galleryCount > 0 && (
+          <div
+            className={cn(
+              'mt-4 grid',
+              isWideGalleryLayout ? 'grid-cols-1 gap-4' : 'gap-4 grid-cols-2 md:grid-cols-3',
+              data.year === 2020 && 'gap-8'
+            )}
+          >
+            {displayGallery.map((image, i) => {
+              const isPanoramic = isPanoramicImage(image)
+              const isFirstImage = i === 0
+              const isSecondImage = i === 1 && data.year === 2020
+              const isFirstOrSecondIn2020 = data.year === 2020 && (isFirstImage || isSecondImage)
+              const imageFitClass = isFirstOrSecondIn2020
+                ? 'object-fill'
+                : isPanoramic || isWideGalleryLayout
+                  ? 'object-contain'
+                  : 'object-cover'
+              return (
                 <button
                   key={image}
                   onClick={() => openAt(i + (data.heroImage ? 1 : 0))}
                   className={cn(
                     'group relative overflow-hidden rounded-lg',
-                    isWideGalleryLayout ? 'aspect-[21/9]' : 'aspect-[4/3]'
+                    isFirstOrSecondIn2020
+                      ? 'col-span-full aspect-[40/9]'
+                      : isPanoramic
+                        ? 'col-span-full aspect-[40/9]'
+                        : isWideGalleryLayout
+                          ? 'aspect-[40/9]'
+                          : 'aspect-[4/3]',
+                    isFirstImage || isSecondImage ? 'p-0' : ''
                   )}
                   aria-label={`View gallery image ${i + 1}`}
                 >
@@ -206,18 +226,19 @@ export function YearChapter({ data, index }: YearChapterProps) {
                     loading="lazy"
                     className={cn(
                       'transition duration-500 group-hover:scale-105',
-                      isWideGalleryLayout ? 'object-contain' : 'object-cover'
+                      imageFitClass
                     )}
                     sizes={
-                      isWideGalleryLayout
+                      isPanoramic || isSecondImage || isWideGalleryLayout
                         ? '(max-width: 1024px) 100vw, 50vw'
                         : '(max-width: 768px) 50vw, 33vw'
                     }
                   />
                 </button>
-              ))}
-            </div>
-          )}
+              )
+            })}
+          </div>
+        )}
         </motion.div>
       </div>
 
