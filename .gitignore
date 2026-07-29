@@ -34,3 +34,6 @@ pnpm-debug.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Firebase service account
+service-account.json
