@@ -38,6 +38,14 @@ const data = years.map((y) => ({
 }))
 
 const outDir = path.join(__dirname, '..', 'src', 'data')
-fs.mkdirSync(outDir, { recursive: true })
-fs.writeFileSync(path.join(outDir, 'years.json'), JSON.stringify(data, null, 2))
+const outFile = path.join(outDir, 'years.json')
+
+try {
+  fs.mkdirSync(outDir, { recursive: true })
+  fs.writeFileSync(outFile, JSON.stringify(data, null, 2))
+} catch (error) {
+  console.error(`Failed to write ${outFile}:`, error)
+  process.exit(1)
+}
+
 console.log('Generated src/data/years.json')
