@@ -446,11 +446,14 @@
       "Renewed goals",
       "Dreamed up the next chapter"
     ],
-    "heroImage": "https://picsum.photos/seed/2026/1920/1080",
+    "heroImage": "/images/2026/PXL_20260804_165755018copy.jpg",
     "galleryImages": [
-      "https://picsum.photos/seed/2026-g1/800/600",
-      "https://picsum.photos/seed/2026-g2/800/600",
-      "https://picsum.photos/seed/2026-g3/800/600"
+      "/images/2026/PXL_20260804_151312030.PORTRAIT.jpg",
+      "/images/2026/PXL_20260804_222309202.PORTRAIT.jpg",
+      "/images/2026/PXL_20260805_152504032.PORTRAIT.jpg",
+      "/images/2026/PXL_20260809_203233383.PORTRAIT.jpg",
+      "/images/2026/PXL_20260810_202849182.jpg",
+      "/images/2026/PXL_20260813_151831538.jpg"
     ]
   }
 ]
