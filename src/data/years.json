@@ -446,14 +446,14 @@
       "Renewed goals",
       "Dreamed up the next chapter"
     ],
-    "heroImage": "/images/2026/PXL_20260804_165755018copy.jpg",
+    "heroImage": "https://storage.googleapis.com/our-twenty-years.firebasestorage.app/images/2026/PXL_20260804_165755018copy.jpg",
     "galleryImages": [
-      "/images/2026/PXL_20260804_151312030.PORTRAIT.jpg",
-      "/images/2026/PXL_20260804_222309202.PORTRAIT.jpg",
-      "/images/2026/PXL_20260805_152504032.PORTRAIT.jpg",
-      "/images/2026/PXL_20260809_203233383.PORTRAIT.jpg",
-      "/images/2026/PXL_20260810_202849182.jpg",
-      "/images/2026/PXL_20260813_151831538.jpg"
+      "https://storage.googleapis.com/our-twenty-years.firebasestorage.app/images/2026/PXL_20260804_151312030.PORTRAIT.jpg",
+      "https://storage.googleapis.com/our-twenty-years.firebasestorage.app/images/2026/PXL_20260804_222309202.PORTRAIT.jpg",
+      "https://storage.googleapis.com/our-twenty-years.firebasestorage.app/images/2026/PXL_20260805_152504032.PORTRAIT.jpg",
+      "https://storage.googleapis.com/our-twenty-years.firebasestorage.app/images/2026/PXL_20260809_203233383.PORTRAIT.jpg",
+      "https://storage.googleapis.com/our-twenty-years.firebasestorage.app/images/2026/PXL_20260810_202849182.jpg",
+      "https://storage.googleapis.com/our-twenty-years.firebasestorage.app/images/2026/PXL_20260813_151831538.jpg"
     ]
   }
 ]
