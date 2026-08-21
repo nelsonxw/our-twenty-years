@@ -153,7 +153,12 @@ export function YearChapter({ data, index }: YearChapterProps) {
         </motion.div>
       </motion.div>
 
-      <div className="flex w-full flex-col justify-center bg-ivory/90 px-8 py-16 lg:w-1/2 lg:px-16 lg:py-24 dark:bg-navy/90">
+      <div
+        className={cn(
+          'flex w-full flex-col justify-center bg-ivory/90 px-8 py-16 lg:w-1/2 lg:px-16 lg:py-24 dark:bg-navy/90',
+          data.year === 2009 && 'lg:justify-start'
+        )}
+      >
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
