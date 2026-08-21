@@ -155,8 +155,10 @@ export function YearChapter({ data, index }: YearChapterProps) {
 
       <div
         className={cn(
-          'flex w-full flex-col justify-center bg-ivory/90 px-8 py-16 lg:w-1/2 lg:px-16 lg:py-24 dark:bg-navy/90',
-          data.year === 2009 && 'lg:justify-start'
+          'flex w-full flex-col justify-center bg-ivory/90 lg:w-1/2 dark:bg-navy/90',
+          data.year === 2009
+            ? 'px-8 pb-16 pt-4 lg:justify-start lg:px-16 lg:pb-24 lg:pt-8'
+            : 'px-8 py-16 lg:px-16 lg:py-24'
         )}
       >
         <motion.div
