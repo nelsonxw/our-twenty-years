@@ -17,7 +17,7 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative flex h-screen items-center justify-center overflow-hidden"
+      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden md:min-h-screen"
     >
       <motion.div
         style={{ y }}
@@ -36,13 +36,13 @@ export function Hero() {
 
       <motion.div
         style={{ opacity }}
-        className="relative z-10 mx-auto max-w-4xl px-6 text-center text-ivory"
+        className="relative z-10 mx-auto max-w-4xl px-4 pb-[env(safe-area-inset-bottom)] pt-[env(safe-area-inset-top)] text-center text-ivory sm:px-6 landscape:py-6"
       >
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="font-serif text-5xl leading-tight md:text-7xl lg:text-8xl"
+          className="max-w-[12ch] font-serif text-[clamp(2.5rem,10vw,6rem)] leading-tight"
         >
           Twenty Years Together
         </motion.h1>
@@ -50,7 +50,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mt-6 font-serif text-2xl tracking-[0.2em] text-champagne md:text-3xl"
+          className="mt-4 font-serif text-xl tracking-[0.08em] text-champagne sm:mt-6 sm:text-2xl sm:tracking-[0.2em] md:text-3xl"
         >
           2006–2026
         </motion.p>
