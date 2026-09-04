@@ -197,7 +197,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
           <div
             className={cn(
               'mt-4 grid',
-              isWideGalleryLayout ? 'grid-cols-1 gap-4' : 'gap-4 grid-cols-2 md:grid-cols-3',
+              isWideGalleryLayout ? 'grid-cols-1 gap-4' : 'grid-cols-3 gap-2 sm:gap-4',
               data.year === 2020 && 'gap-8'
             )}
           >
@@ -218,9 +218,9 @@ export function YearChapter({ data, index }: YearChapterProps) {
                   className={cn(
                     'group relative overflow-hidden rounded-lg',
                     isFirstOrSecondIn2020
-                      ? 'col-span-full aspect-[40/9]'
+                      ? 'aspect-[4/3] sm:col-span-full sm:aspect-[40/9]'
                       : isPanoramic
-                        ? 'col-span-full aspect-[40/9]'
+                        ? 'aspect-[4/3] sm:col-span-full sm:aspect-[40/9]'
                         : isWideGalleryLayout
                           ? 'aspect-[40/9]'
                           : 'aspect-[4/3]',
@@ -238,9 +238,11 @@ export function YearChapter({ data, index }: YearChapterProps) {
                       imageFitClass
                     )}
                     sizes={
-                      isPanoramic || isSecondImage || isWideGalleryLayout
+                      isWideGalleryLayout
                         ? '(max-width: 1024px) 100vw, 50vw'
-                        : '(max-width: 768px) 50vw, 33vw'
+                        : isPanoramic || isSecondImage
+                          ? '(max-width: 640px) 33vw, (max-width: 1024px) 100vw, 50vw'
+                          : '(max-width: 768px) 33vw, 33vw'
                     }
                   />
                 </button>
