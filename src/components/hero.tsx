@@ -21,14 +21,14 @@ export function Hero() {
     >
       <motion.div
         style={{ y }}
-        className="absolute inset-0 z-0 scale-110"
+        className="absolute inset-0 z-0 scale-100 bg-navy sm:scale-110"
       >
         <Image
           src="/images/front_page/IMG_8531_enhanced.png"
           alt=""
           fill
           priority
-          className="object-cover"
+          className="object-contain sm:object-cover"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-navy/40" />
