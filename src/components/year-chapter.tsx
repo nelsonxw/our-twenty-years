@@ -185,9 +185,9 @@ export function YearChapter({ data, index }: YearChapterProps) {
               {data.milestones.map((milestone) => (
                 <li
                   key={milestone}
-                  className={cn('flex items-center gap-3 text-navy/80 dark:text-ivory/80', hasChinese(milestone) && 'text-lg lg:text-xl')}
+                  className={cn('flex items-start gap-3 text-navy/80 dark:text-ivory/80', hasChinese(milestone) && 'text-lg lg:text-xl')}
                 >
-                  <Heart className="h-4 w-4 text-champagne" />
+                  <Heart className="mt-1 h-4 w-4 shrink-0 self-start text-champagne" />
                   <span className={cn(hasChinese(milestone) && 'font-chinese')}>{milestone}</span>
                 </li>
               ))}
