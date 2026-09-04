@@ -1,17 +1,12 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import { ScrollIndicator } from './scroll-indicator'
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null)
-  const [timestamp, setTimestamp] = useState('')
-
-  useEffect(() => {
-    setTimestamp(new Date().toISOString())
-  }, [])
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start start', 'end start'],
@@ -24,13 +19,6 @@ export function Hero() {
       ref={ref}
       className="relative flex h-screen items-center justify-center overflow-hidden"
     >
-      <div
-        className="absolute right-4 top-4 z-20 rounded border border-ivory/40 bg-navy/50 px-2 py-1 font-mono text-xs text-ivory/80"
-        aria-label="Test timestamp"
-      >
-        TEST: {timestamp || 'loading'}
-      </div>
-
       <motion.div
         style={{ y }}
         className="absolute inset-0 z-0 scale-110"
