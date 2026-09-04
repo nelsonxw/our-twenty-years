@@ -41,6 +41,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
   const displayGallery = data.galleryImages.slice(0, 3)
   const galleryCount = displayGallery.length
   const isWideGalleryLayout = galleryCount > 0 && galleryCount <= 2
+  const is2020Gallery = data.year === 2020
 
   const isGoogleDrive =
     data.heroVideo?.startsWith('https://drive.google.com') ?? false
@@ -197,34 +198,25 @@ export function YearChapter({ data, index }: YearChapterProps) {
           <div
             className={cn(
               'mt-4 grid',
-              isWideGalleryLayout ? 'grid-cols-1 gap-4' : 'grid-cols-3 gap-2 sm:gap-4',
-              data.year === 2020 && 'gap-8'
+              is2020Gallery || isWideGalleryLayout
+                ? 'grid-cols-1 gap-8'
+                : 'grid-cols-3 gap-2 sm:gap-4'
             )}
           >
             {displayGallery.map((image, i) => {
               const isPanoramic = isPanoramicImage(image)
-              const isFirstImage = i === 0
-              const isSecondImage = i === 1 && data.year === 2020
-              const isFirstOrSecondIn2020 = data.year === 2020 && (isFirstImage || isSecondImage)
-              const imageFitClass = isFirstOrSecondIn2020
-                ? 'object-fill'
-                : isPanoramic || isWideGalleryLayout
-                  ? 'object-contain'
-                  : 'object-cover'
+              const imageFitClass = is2020Gallery || isPanoramic || isWideGalleryLayout
+                ? 'object-contain'
+                : 'object-cover'
               return (
                 <button
                   key={image}
                   onClick={() => openAt(i + (data.heroImage ? 1 : 0))}
                   className={cn(
                     'group relative overflow-hidden rounded-lg',
-                    isFirstOrSecondIn2020
-                      ? 'aspect-[4/3] sm:col-span-full sm:aspect-[40/9]'
-                      : isPanoramic
-                        ? 'aspect-[4/3] sm:col-span-full sm:aspect-[40/9]'
-                        : isWideGalleryLayout
-                          ? 'aspect-[40/9]'
-                          : 'aspect-[4/3]',
-                    isFirstImage || isSecondImage ? 'p-0' : ''
+                    is2020Gallery || isPanoramic || isWideGalleryLayout
+                      ? 'col-span-full aspect-[40/9]'
+                      : 'aspect-[4/3]'
                   )}
                   aria-label={`View gallery image ${i + 1}`}
                 >
@@ -234,15 +226,14 @@ export function YearChapter({ data, index }: YearChapterProps) {
                     fill
                     loading="lazy"
                     className={cn(
-                      'transition duration-500 group-hover:scale-105',
+                      'transition duration-500',
+                      !is2020Gallery && 'group-hover:scale-105',
                       imageFitClass
                     )}
                     sizes={
-                      isWideGalleryLayout
+                      is2020Gallery || isPanoramic || isWideGalleryLayout
                         ? '(max-width: 1024px) 100vw, 50vw'
-                        : isPanoramic || isSecondImage
-                          ? '(max-width: 640px) 33vw, (max-width: 1024px) 100vw, 50vw'
-                          : '(max-width: 768px) 33vw, 33vw'
+                        : '(max-width: 768px) 33vw, 33vw'
                     }
                   />
                 </button>
