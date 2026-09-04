@@ -205,9 +205,11 @@ export function YearChapter({ data, index }: YearChapterProps) {
           >
             {displayGallery.map((image, i) => {
               const isPanoramic = isPanoramicImage(image)
-              const imageFitClass = is2020Gallery || isPanoramic || isWideGalleryLayout
-                ? 'object-contain'
-                : 'object-cover'
+              const imageFitClass = is2020Gallery
+                ? 'object-fill'
+                : isPanoramic || isWideGalleryLayout
+                  ? 'object-contain'
+                  : 'object-cover'
               return (
                 <button
                   key={image}
