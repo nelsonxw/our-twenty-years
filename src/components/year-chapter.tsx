@@ -156,7 +156,7 @@ export function YearChapter({ data, index }: YearChapterProps) {
       <div
         className={cn(
           'flex w-full flex-col justify-center bg-ivory/90 lg:w-1/2 dark:bg-navy/90',
-          data.year === 2009 || (data.year >= 2011 && data.year <= 2017)
+          (data.year >= 2007 && data.year <= 2021) || (data.year >= 2023 && data.year <= 2026)
             ? 'px-8 pb-16 pt-4 lg:justify-start lg:px-16 lg:pb-24 lg:pt-0'
             : 'px-8 py-16 lg:px-16 lg:py-24'
         )}
